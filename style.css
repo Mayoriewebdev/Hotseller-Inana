@@ -1,0 +1,200 @@
+/* Reset & Global */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image:url("images/background.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+
+/* SECTION */
+
+.product-section{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.product-container{
+  width:100%;
+  max-width:420px;
+}
+
+
+/* Hot Seller badge */
+
+.badge{
+  margin-bottom:25px;
+}
+
+.badge img{
+  width:140px;
+  height:auto;
+  display:block;
+}
+
+
+/* Title */
+
+.product-title{
+  margin-bottom:25px;
+}
+
+.product-title img{
+  width:100%;
+  max-width:280px;
+  height:auto;
+  display:block;
+}
+
+
+/* Description */
+
+.product-desc{
+  margin-bottom:10px;
+}
+
+.product-desc img{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+}
+
+
+/* Product Image */
+
+.product-image{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.product-image img{
+  width:100%;
+  max-width:260px;
+  height:auto;
+  object-fit:contain;
+  margin-top:40px;
+}
+
+
+/* Bottom Section */
+
+.product-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+   gap:10px; 
+}
+
+
+/* Price Image */
+
+.price-box img{
+  width:160px;
+  height:auto;
+  display:block;
+}
+
+
+/* Buy Button */
+
+.buy-btn{
+   cursor:pointer;
+  display:inline-block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buy-btn img{
+  width:170px;
+  height:auto;
+    display:block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buy-btn:hover img{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.product-container{
+  max-width:380px;
+}
+
+.product-image img{
+  max-width:240px;
+}
+
+.price-box img{
+  width:150px;
+}
+
+.buy-btn img{
+  width:160px;
+}
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.product-section{
+  padding:30px 16px;
+}
+
+.product-container{
+  max-width:100%;
+}
+
+/* Images scale properly */
+
+.badge img{
+  width:120px;
+}
+
+.product-title img{
+  max-width:220px;
+}
+
+.product-desc img{
+  max-width:260px;
+}
+
+.product-image img{
+  max-width:210px;
+}
+
+.price-box img{
+  width:130px;
+}
+
+.buy-btn img{
+  width:140px;
+}
+
+/* keep price and button on same row */
+
+.product-bottom{
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+}
